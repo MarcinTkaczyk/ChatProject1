@@ -20,7 +20,7 @@ import static MyChat.server.ServerEventType.SERVER_STARTED;
 @RequiredArgsConstructor
 public class ChatServer {
 
-    private static final int DEFAULT_PORT = 8888;
+    private static final int DEFAULT_PORT = 8099;
     private static final int THREADS_COUNT = 1024;
 
     private final ServerWorkers serverWorkers;
@@ -44,7 +44,6 @@ public class ChatServer {
             }
         }
     }
-
 
     private void createWorker(Socket socket) {
         var worker = new Worker(socket, eventsBus, chatRoomManager, historyLogger);

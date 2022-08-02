@@ -30,4 +30,13 @@ public class ClientUtils {
             System.out.println(e.getMessage());
         }
     }
+
+    public static void showMenu(){
+        System.out.println("You are in the GENERAL room \n" +
+                "Type: \n" +
+                "ROOM> to change room, if room does not exist it will be crated, example: ROOM>new \n" +
+                "HISTORY> to display room history in which you chatted, example HISTORY>GENERAL \n" +
+                "FILE> to send file to everyone in the room, please provide absolute path after>, example: FILE>/Users/user/file.txt \n" +
+                "or just type to chat in the room");
+    }
 }

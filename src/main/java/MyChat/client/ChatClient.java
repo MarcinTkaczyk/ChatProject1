@@ -63,6 +63,7 @@ public class ChatClient {
         var consoleReader = new Thread(readFromConsole);
         consoleReader.setDaemon(true);
         consoleReader.start();
+        ClientUtils.showMenu();
     }
 
     public static void main(String[] args) throws IOException {
